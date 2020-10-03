@@ -1,0 +1,262 @@
+html,
+body 
+{
+  font-family:Times New Roman;
+  background-image: radial-gradient(#F1C40F,#873600);
+  background-repeat:norepeat;
+  background-size:100% 100%;
+  text-align:center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+h1
+{
+  font-size:50px;
+  color:#900C3F;
+  text-align:right;
+  font-family:Palatino Linotype;
+}
+
+.intro 
+{
+  top: 0;
+  background: url(buuddha.jpg);
+  height: 48vh;
+  padding-top: 35vh;
+  background-position: fill;
+  background-repeat:no repeat;
+  background-size: 100% 100%;
+}
+.pro
+{
+	 position: right;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  background-color: white;
+  border-radius:10px;
+}
+nav ul 
+{
+  text-align: right;
+  width: 100%;
+  background-color:#C70039;
+  background-position: fill;
+  background-size: 100% 100%;
+}
+
+nav ul li 
+{
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-size:25px;
+}
+
+nav ul li a 
+{
+  color: black;
+  text-decoration: none;
+   text-align:center-left;
+}
+
+nav ul li a:hover 
+{
+  color: red;
+  font-size:35px;
+}
+.bio
+{
+	 background-image: radial-gradient(#FF5733,#900C3F);
+  padding-bottom: 100px;
+  
+ 
+}
+.bio p
+{
+	font-size:40px;
+	color: #154643 ;
+	padding:170px 80px 80px 80px;
+}
+
+.work 
+{
+  padding-top: 60px;
+  margin-top:-40px;
+}
+
+.work .work-header 
+{
+  margin-top: 50px;
+  color: #0000AA;
+  font-weight: 50px;
+}
+
+.project 
+{
+  text-decoration: none;
+  color: #0F9A66;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px #008080;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+  border-radius: 20px;
+ }
+
+.project-pic 
+{
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid black;
+}
+
+.project-title 
+{
+  color: #0000AA;
+}
+
+.show-all 
+{
+     text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 35px;
+  margin: 20px auto 90px;
+  background: #e0ebe8;
+  color: #008080;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 2px solid #14de14;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top:10px
+}
+
+.show-all:hover 
+{
+ background: #2EC502;
+ color: black;
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+}
+  nav ul li {
+    margin: 20px;
+}
+  .project 
+{
+    margin: 40px 0;
+}
+}
+.location
+{
+ top: 0;
+ background: url(map2.jpg) ;
+ min-height: 40vh;
+ padding-top: 40vh;
+ background-position:center;
+ background-size: 100% 100%;
+ height:70px;
+  
+}
+.location p
+{
+ text-align:center;
+ font-size:20px;
+ color:#F26641;
+}
+  .but
+{
+ text-decoration: none;
+ display: block;
+ width: 150px;
+ height: 40px;
+ margin: 20px auto 100px;
+ background: #72EED7;
+ color: #000000;
+ font-weight: bold;
+ font-size: 1em;
+ border: 2px solid #1767DC;
+ border-radius: 10px;
+ cursor: pointer;
+ padding-top:5px;
+}
+
+.contact 
+{
+  background-image:radial-gradient(#271CBE,DDDCF1);
+  padding-bottom: 160px;
+}
+
+.header 
+{
+  padding: 160px 0 110px;
+}
+
+.contact-details 
+{
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  list-style-type: none;
+  border: 2px solid #90C695;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color:#04F1FE;
+  color: red;
+  text-decoration: none;
+}
+.contact-pic 
+{
+  width: 100px;
+  height: 100px;
+}
+
+
+.contact-details:hover 
+{
+  background: #04F1FE;
+  color: red;
+  font-size:20px;
+}
+
+footer
+{
+  padding: 20px;
+  background: #22313F;
+  color: white;
+  line-height: 40px;
+}
+
+footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 367px) 
+{
+  .contact-details {
+    border: 2px solid #90C695;
+    border-radius: 0;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    line-height: normal;
+  }
+}
+
+
+
+
+
+
+

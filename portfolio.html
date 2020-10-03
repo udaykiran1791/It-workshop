@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" type="text/css" href="portfolio.css">
+<nav>
+  <ul id='navbar'>
+    <li><a href="#welcome-section"><i><b>About</b></i></a></li>
+    <li><a href="#projects"><i><b>Work</b></i></a></li>
+    <li><a href="#loca"><i><b>Your location</b></i></a></li>
+	<li><a href="#contact"><i><b>Reach Me</b></i></a></li>
+  </ul>
+</nav>
+<div  class="intro">
+  <h1><i>Hey<br>This is Uday kiran</i></h1>
+  <img  class="pro" src="uday.jpg" alt="profile pic">
+</div>
+<div id="welcome-section" class="bio">
+<blockquote>
+ <p><b><q>Enthusiastic,Self-motivated university graduate with a B.E in Computer Science Engineering. Created My Own Personal Portfolio Website and
+Some Webpages. Noted for skills in meeting deadlines,  accurate research and effective
+problem-solving. Motivative Active person</q></b></p> 
+</div>
+</blockquote>
+<div id="projects" class="work">
+  <h2 class="work-header">These are some of web pages I had done</h2>
+  <a href="https://codepen.io/udaykiran1791/full/JjXgjGp" target="_blank" class="project project-tile">
+    <img class="project-pic" src="hp1.png" alt="project">
+    <div class="project-title"><b>Product landing page</b></div>
+  </a>
+  <a href="technical.html" target="_blank" class="project project-tile">
+    <img class="project-pic" src="php.png" alt="project">
+    <div class="project-title"><b>Technical Data of PHP</b></div>
+  </a>
+  <a href="project.html" target="_blank" class="project project-tile">
+    <img class="project-pic" src="subhash.png" alt="project">
+    <div class="project-title"><b>Tribute Page of Subhash Chandra Bose</b>
+</div>
+  </a>
+  <a href="survey.html" target="_blank" class="project project-tile">
+    <img class="project-pic" src="surve.png" alt="project">
+    <div class="project-title"><b>Survey Form</b></div>
+  </a>
+  <a href="https://codepen.io/udaykiran1791/" class="show-all" target="_blank">Show all</a>
+</div>
+<div id="loca" class="location" >
+<p><b>Go Check Your Coordinates</b></p>
+<button class="but" onclick="Loc()">Find Loction</button>
+<p id="find"></p>
+<script>
+var x = document.getElementById("find");
+
+function Loc() {
+ <!--- if (navigator.geolocation) {-->
+    navigator.geolocation.getCurrentPosition(showPosition,errHand);
+ <!-- } else { -->
+  <!--  x.innerHTML = "Browser not supported";-->
+<!--  } -->
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+     function errHand(err) { 
+            switch(err.code) { 
+                case err.PERMISSION_DENIED: 
+                    x.innerHTML = " Application access denied "+ 
+                    "Allow Permission to make use of location services" 
+                    break; 
+                case err.POSITION_UNAVAILABLE: 
+                    x.innerHTML = " Location of the device is unknown" 
+                    break; 
+                case err.TIMEOUT: 
+                    x.innerHTML = "The request to get user location timed out" 
+                    break; 
+                case err.UNKNOWN_ERROR: 
+                    x.innerHTML = "Time to fetch location information exceeded" + 
+                    "the maximum timeout interval" 
+                    break; 
+            } 
+        }
+</script>
+</div>
+<div id="contact" class="contact">
+  <div class="header">
+    <h2>Reach Me On......</h2>
+    <p>any time Welcome</p>
+  </div>
+  <a href="https://www.facebook.com/uday.kiran.98284" target="_blank" class="contact-details"><img class="contact-pic" src="facebook.png" alt="facebook"></a>
+  <a href="https://www.instagram.com/uday.kiran.98284/" class="contact-details"><img class="contact-pic" src="instagram.png" alt="instagram"></a>
+  <a href="udaykira1791@gmail.com" class="contact-details" ><img class="contact-pic" src="gmail.png" alt="gmail"></a>
+</div>
+<footer>Visit Again.....
+  <p>&copy; Created by uday kiran</p>
+</footer>
+</html>
